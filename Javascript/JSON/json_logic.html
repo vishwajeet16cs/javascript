@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Json</title>
+    <script>
+        var jsonobject={
+            //key------:value-----
+            "firstname":"vishwajeet",
+            "lastname":"kumar",
+            "age":24,
+            "profession":"web developer"
+        }
+        document.write(jsonobject.lastname+"<br>");//to write some thing in browser level
+        //not in console
+        for(x in jsonobject){//for( in )- used for object iteration
+            //here x represent key or name of the object
+            document.write(jsonobject[x]+"<br>");
+            //here jsonobject[x] represent value of the object
+            //output--------------
+            // vishwajeet
+            // kumar
+            // 24
+            // web developer
+            //---------------------
+            document.write(x+"  <br>");
+            //here x represent key or name of the object
+            //--------output-------
+            // firstname
+            // lastname
+            // age
+            // profession
+            //---------------------
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
